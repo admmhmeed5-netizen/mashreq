@@ -39,6 +39,12 @@
             max-width: 400px;
             text-align: center;
         }
+        .admin-login-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 8px;
+        }
         h1 {
             color: #ff7f00;
             margin-bottom: 20px;
@@ -83,6 +89,7 @@
         <button class="lang-btn" onclick="window.location.href=\'admin_login_en.html\'">English</button>
     </div>
     <div class="login-container">
+        <img class="admin-login-logo" src="assets/mashreq-logo-header.jpg" alt="شعار بنك المشرق">
         <h1>تسجيل الدخول للوحة المشرف</h1>
         <form method="POST" action="/admin/login">
             <div class="form-group">

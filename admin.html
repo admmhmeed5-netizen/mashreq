@@ -29,6 +29,16 @@
             top: 0;
             z-index: 1000;
         }
+        .admin-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .admin-brand img {
+            width: 46px;
+            height: 46px;
+            object-fit: contain;
+        }
         .admin-header h1 {
             font-size: 22px;
             color: #1a1a1a;
@@ -346,7 +356,8 @@
 
     <!-- Header -->
     <header class="admin-header">
-        <div>
+        <div class="admin-brand">
+            <img src="assets/mashreq-logo-header.jpg" alt="شعار بنك المشرق">
             <h1>لوحة تحكم المشرف</h1>
         </div>
         <div class="header-actions">
