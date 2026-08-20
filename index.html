@@ -237,25 +237,34 @@
             color: #ff7f00;
         }
         .order-btn {
-            background-color: #ff7f00;
-            color: white;
-            border: none;
-            padding: 8px;
-            border-radius: 6px;
+            background: linear-gradient(135deg, #ff8a1f 0%, #f06f00 100%);
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,0.28);
+            padding: 10px 22px;
+            border-radius: 12px;
             cursor: pointer;
             font-size: 13px;
-            font-weight: bold;
+            font-weight: 800;
+            letter-spacing: 0.1px;
             text-decoration: none;
-            display: block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             width: fit-content;
-            min-width: 180px;
-            max-width: 220px;
-            margin: 0 auto;
-            padding: 7px 14px;
-            transition: background-color 0.2s;
+            min-width: 190px;
+            max-width: 230px;
+            margin: 2px auto 0 auto;
+            box-shadow: 0 6px 14px rgba(240,111,0,0.24);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
         }
         .order-btn:hover {
-            background-color: #e06f00;
+            background: linear-gradient(135deg, #ff9a3d 0%, #e76700 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 9px 18px rgba(240,111,0,0.32);
+        }
+        .order-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 9px rgba(240,111,0,0.22);
         }
 
         /* الفوتر (Footer) باللون البرتقالي */
@@ -357,7 +366,7 @@
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>تدعم تقنية eSIM المتطورة</span></li>
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>بطارية قوية تدوم لمدة 14 يومًا</span></li>
             </ul>
-            <a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <a href="personal_info.html" class="order-btn">اطلب ساعتك الآن</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean-white/watch-02.jpg" alt="ساعة 2">
@@ -369,7 +378,7 @@
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>تدعم تقنية eSIM المتطورة</span></li>
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>بطارية قوية تدوم لمدة 14 يومًا</span></li>
             </ul>
-            <a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <a href="personal_info.html" class="order-btn">اطلب ساعتك الآن</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean-white/watch-03.jpg" alt="ساعة 3">
@@ -381,7 +390,7 @@
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>تدعم تقنية eSIM المتطورة</span></li>
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>بطارية قوية تدوم لمدة 14 يومًا</span></li>
             </ul>
-            <a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <a href="personal_info.html" class="order-btn">اطلب ساعتك الآن</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean-white/watch-04.jpg" alt="ساعة 4">
@@ -393,7 +402,7 @@
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>تدعم تقنية eSIM المتطورة</span></li>
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>بطارية قوية تدوم لمدة 14 يومًا</span></li>
             </ul>
-            <a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <a href="personal_info.html" class="order-btn">اطلب ساعتك الآن</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean-white/watch-05.jpg" alt="ساعة 5">
@@ -405,7 +414,7 @@
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>تدعم تقنية eSIM المتطورة</span></li>
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>بطارية قوية تدوم لمدة 14 يومًا</span></li>
             </ul>
-            <a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <a href="personal_info.html" class="order-btn">اطلب ساعتك الآن</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean-white/watch-06.jpg" alt="ساعة 6">
@@ -417,7 +426,7 @@
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>تدعم تقنية eSIM المتطورة</span></li>
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>بطارية قوية تدوم لمدة 14 يومًا</span></li>
             </ul>
-            <a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <a href="personal_info.html" class="order-btn">اطلب ساعتك الآن</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean-white/watch-07.jpg" alt="ساعة 7">
@@ -429,7 +438,7 @@
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>تدعم تقنية eSIM المتطورة</span></li>
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>بطارية قوية تدوم لمدة 14 يومًا</span></li>
             </ul>
-            <a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <a href="personal_info.html" class="order-btn">اطلب ساعتك الآن</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean-white/watch-08.jpg" alt="ساعة 8">
@@ -441,7 +450,7 @@
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>تدعم تقنية eSIM المتطورة</span></li>
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>بطارية قوية تدوم لمدة 14 يومًا</span></li>
             </ul>
-            <a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <a href="personal_info.html" class="order-btn">اطلب ساعتك الآن</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean-white/watch-09.jpg" alt="ساعة 9">
@@ -453,7 +462,7 @@
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>تدعم تقنية eSIM المتطورة</span></li>
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>بطارية قوية تدوم لمدة 14 يومًا</span></li>
             </ul>
-            <a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <a href="personal_info.html" class="order-btn">اطلب ساعتك الآن</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean-white/watch-10.jpg" alt="ساعة 10">
@@ -465,7 +474,7 @@
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>تدعم تقنية eSIM المتطورة</span></li>
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>بطارية قوية تدوم لمدة 14 يومًا</span></li>
             </ul>
-            <a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <a href="personal_info.html" class="order-btn">اطلب ساعتك الآن</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean-white/watch-11.jpg" alt="ساعة 11">
@@ -477,7 +486,7 @@
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>تدعم تقنية eSIM المتطورة</span></li>
                 <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>بطارية قوية تدوم لمدة 14 يومًا</span></li>
             </ul>
-            <a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <a href="personal_info.html" class="order-btn">اطلب ساعتك الآن</a>
         </div>
     </div>
     </div>
