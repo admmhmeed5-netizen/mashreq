@@ -162,11 +162,11 @@
             flex: 1;
         }
         .watch-card {
-            background: #f8f9fa;
+            background: #ffffff;
             border-radius: 10px;
-            padding: 10px;
+            padding: 12px;
             text-align: center;
-            box-shadow: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -179,6 +179,46 @@
             object-fit: contain;
             margin-bottom: 8px;
         }
+        .watch-features {
+            list-style: none;
+            margin: 0 0 10px 0;
+            padding: 9px 10px;
+            background: #ffffff;
+            border-radius: 8px;
+            text-align: inherit;
+        }
+        .watch-features li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 7px;
+            color: #333;
+            font-size: 12px;
+            line-height: 1.35;
+            font-weight: 600;
+        }
+        .watch-features li:last-child {
+            margin-bottom: 0;
+        }
+        .feature-icon {
+            width: 22px;
+            height: 22px;
+            flex: 0 0 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #ff7f00;
+        }
+        .feature-icon svg {
+            width: 21px;
+            height: 21px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
         .watch-gift {
             font-size: 12px;
             margin-bottom: 10px;
@@ -196,7 +236,11 @@
             font-weight: bold;
             text-decoration: none;
             display: block;
-            width: 100%;
+            width: fit-content;
+            min-width: 180px;
+            max-width: 220px;
+            margin: 0 auto;
+            padding: 7px 14px;
             transition: background-color 0.2s;
         }
         .order-btn:hover {
@@ -294,59 +338,137 @@
     <div class="watches-container">
         <div class="watch-card">
             <img src="assets/clean/watch-01.jpg" alt="Watch 1">
-            <div class="watch-gift">Free gift courtesy of Mashreq Bank</div>
+            <div class="watch-gift">Free gift presented by Mashreq Bank</div>
+            <ul class="watch-features">
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2m0 0c-.7 3.3-2.2 5.8-4.5 7.5M8.5 5c.7 2.2 2 4.1 4 5.5M6 9.5h7M14 19l3-8 3 8m-5.2-2h4.4"/></svg></span><span>Supports all languages</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 18.5h2"/></svg></span><span>Supports all Apple and Android devices</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5a15.5 15.5 0 0 1 18 0M6.5 13a10 10 0 0 1 11 0M10 16.5a5 5 0 0 1 4 0M12 20h.01"/></svg></span><span>Supports contactless payment</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>Supports advanced eSIM technology</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>Powerful battery lasting up to 14 days</span></li>
+            </ul>
             <a href="personal_info_en.html" class="order-btn">Order Your Watch Now</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean/watch-02.jpg" alt="Watch 2">
-            <div class="watch-gift">Free gift courtesy of Mashreq Bank</div>
+            <div class="watch-gift">Free gift presented by Mashreq Bank</div>
+            <ul class="watch-features">
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2m0 0c-.7 3.3-2.2 5.8-4.5 7.5M8.5 5c.7 2.2 2 4.1 4 5.5M6 9.5h7M14 19l3-8 3 8m-5.2-2h4.4"/></svg></span><span>Supports all languages</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 18.5h2"/></svg></span><span>Supports all Apple and Android devices</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5a15.5 15.5 0 0 1 18 0M6.5 13a10 10 0 0 1 11 0M10 16.5a5 5 0 0 1 4 0M12 20h.01"/></svg></span><span>Supports contactless payment</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>Supports advanced eSIM technology</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>Powerful battery lasting up to 14 days</span></li>
+            </ul>
             <a href="personal_info_en.html" class="order-btn">Order Your Watch Now</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean/watch-03.jpg" alt="Watch 3">
-            <div class="watch-gift">Free gift courtesy of Mashreq Bank</div>
+            <div class="watch-gift">Free gift presented by Mashreq Bank</div>
+            <ul class="watch-features">
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2m0 0c-.7 3.3-2.2 5.8-4.5 7.5M8.5 5c.7 2.2 2 4.1 4 5.5M6 9.5h7M14 19l3-8 3 8m-5.2-2h4.4"/></svg></span><span>Supports all languages</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 18.5h2"/></svg></span><span>Supports all Apple and Android devices</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5a15.5 15.5 0 0 1 18 0M6.5 13a10 10 0 0 1 11 0M10 16.5a5 5 0 0 1 4 0M12 20h.01"/></svg></span><span>Supports contactless payment</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>Supports advanced eSIM technology</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>Powerful battery lasting up to 14 days</span></li>
+            </ul>
             <a href="personal_info_en.html" class="order-btn">Order Your Watch Now</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean/watch-04.jpg" alt="Watch 4">
-            <div class="watch-gift">Free gift courtesy of Mashreq Bank</div>
+            <div class="watch-gift">Free gift presented by Mashreq Bank</div>
+            <ul class="watch-features">
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2m0 0c-.7 3.3-2.2 5.8-4.5 7.5M8.5 5c.7 2.2 2 4.1 4 5.5M6 9.5h7M14 19l3-8 3 8m-5.2-2h4.4"/></svg></span><span>Supports all languages</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 18.5h2"/></svg></span><span>Supports all Apple and Android devices</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5a15.5 15.5 0 0 1 18 0M6.5 13a10 10 0 0 1 11 0M10 16.5a5 5 0 0 1 4 0M12 20h.01"/></svg></span><span>Supports contactless payment</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>Supports advanced eSIM technology</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>Powerful battery lasting up to 14 days</span></li>
+            </ul>
             <a href="personal_info_en.html" class="order-btn">Order Your Watch Now</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean/watch-05.jpg" alt="Watch 5">
-            <div class="watch-gift">Free gift courtesy of Mashreq Bank</div>
+            <div class="watch-gift">Free gift presented by Mashreq Bank</div>
+            <ul class="watch-features">
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2m0 0c-.7 3.3-2.2 5.8-4.5 7.5M8.5 5c.7 2.2 2 4.1 4 5.5M6 9.5h7M14 19l3-8 3 8m-5.2-2h4.4"/></svg></span><span>Supports all languages</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 18.5h2"/></svg></span><span>Supports all Apple and Android devices</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5a15.5 15.5 0 0 1 18 0M6.5 13a10 10 0 0 1 11 0M10 16.5a5 5 0 0 1 4 0M12 20h.01"/></svg></span><span>Supports contactless payment</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>Supports advanced eSIM technology</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>Powerful battery lasting up to 14 days</span></li>
+            </ul>
             <a href="personal_info_en.html" class="order-btn">Order Your Watch Now</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean/watch-06.jpg" alt="Watch 6">
-            <div class="watch-gift">Free gift courtesy of Mashreq Bank</div>
+            <div class="watch-gift">Free gift presented by Mashreq Bank</div>
+            <ul class="watch-features">
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2m0 0c-.7 3.3-2.2 5.8-4.5 7.5M8.5 5c.7 2.2 2 4.1 4 5.5M6 9.5h7M14 19l3-8 3 8m-5.2-2h4.4"/></svg></span><span>Supports all languages</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 18.5h2"/></svg></span><span>Supports all Apple and Android devices</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5a15.5 15.5 0 0 1 18 0M6.5 13a10 10 0 0 1 11 0M10 16.5a5 5 0 0 1 4 0M12 20h.01"/></svg></span><span>Supports contactless payment</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>Supports advanced eSIM technology</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>Powerful battery lasting up to 14 days</span></li>
+            </ul>
             <a href="personal_info_en.html" class="order-btn">Order Your Watch Now</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean/watch-07.jpg" alt="Watch 7">
-            <div class="watch-gift">Free gift courtesy of Mashreq Bank</div>
+            <div class="watch-gift">Free gift presented by Mashreq Bank</div>
+            <ul class="watch-features">
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2m0 0c-.7 3.3-2.2 5.8-4.5 7.5M8.5 5c.7 2.2 2 4.1 4 5.5M6 9.5h7M14 19l3-8 3 8m-5.2-2h4.4"/></svg></span><span>Supports all languages</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 18.5h2"/></svg></span><span>Supports all Apple and Android devices</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5a15.5 15.5 0 0 1 18 0M6.5 13a10 10 0 0 1 11 0M10 16.5a5 5 0 0 1 4 0M12 20h.01"/></svg></span><span>Supports contactless payment</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>Supports advanced eSIM technology</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>Powerful battery lasting up to 14 days</span></li>
+            </ul>
             <a href="personal_info_en.html" class="order-btn">Order Your Watch Now</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean/watch-08.jpg" alt="Watch 8">
-            <div class="watch-gift">Free gift courtesy of Mashreq Bank</div>
+            <div class="watch-gift">Free gift presented by Mashreq Bank</div>
+            <ul class="watch-features">
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2m0 0c-.7 3.3-2.2 5.8-4.5 7.5M8.5 5c.7 2.2 2 4.1 4 5.5M6 9.5h7M14 19l3-8 3 8m-5.2-2h4.4"/></svg></span><span>Supports all languages</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 18.5h2"/></svg></span><span>Supports all Apple and Android devices</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5a15.5 15.5 0 0 1 18 0M6.5 13a10 10 0 0 1 11 0M10 16.5a5 5 0 0 1 4 0M12 20h.01"/></svg></span><span>Supports contactless payment</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>Supports advanced eSIM technology</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>Powerful battery lasting up to 14 days</span></li>
+            </ul>
             <a href="personal_info_en.html" class="order-btn">Order Your Watch Now</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean/watch-09.jpg" alt="Watch 9">
-            <div class="watch-gift">Free gift courtesy of Mashreq Bank</div>
+            <div class="watch-gift">Free gift presented by Mashreq Bank</div>
+            <ul class="watch-features">
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2m0 0c-.7 3.3-2.2 5.8-4.5 7.5M8.5 5c.7 2.2 2 4.1 4 5.5M6 9.5h7M14 19l3-8 3 8m-5.2-2h4.4"/></svg></span><span>Supports all languages</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 18.5h2"/></svg></span><span>Supports all Apple and Android devices</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5a15.5 15.5 0 0 1 18 0M6.5 13a10 10 0 0 1 11 0M10 16.5a5 5 0 0 1 4 0M12 20h.01"/></svg></span><span>Supports contactless payment</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>Supports advanced eSIM technology</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>Powerful battery lasting up to 14 days</span></li>
+            </ul>
             <a href="personal_info_en.html" class="order-btn">Order Your Watch Now</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean/watch-10.jpg" alt="Watch 10">
-            <div class="watch-gift">Free gift courtesy of Mashreq Bank</div>
+            <div class="watch-gift">Free gift presented by Mashreq Bank</div>
+            <ul class="watch-features">
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2m0 0c-.7 3.3-2.2 5.8-4.5 7.5M8.5 5c.7 2.2 2 4.1 4 5.5M6 9.5h7M14 19l3-8 3 8m-5.2-2h4.4"/></svg></span><span>Supports all languages</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 18.5h2"/></svg></span><span>Supports all Apple and Android devices</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5a15.5 15.5 0 0 1 18 0M6.5 13a10 10 0 0 1 11 0M10 16.5a5 5 0 0 1 4 0M12 20h.01"/></svg></span><span>Supports contactless payment</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>Supports advanced eSIM technology</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>Powerful battery lasting up to 14 days</span></li>
+            </ul>
             <a href="personal_info_en.html" class="order-btn">Order Your Watch Now</a>
         </div>
         <div class="watch-card">
             <img src="assets/clean/watch-11.jpg" alt="Watch 11">
-            <div class="watch-gift">Free gift courtesy of Mashreq Bank</div>
+            <div class="watch-gift">Free gift presented by Mashreq Bank</div>
+            <ul class="watch-features">
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2m0 0c-.7 3.3-2.2 5.8-4.5 7.5M8.5 5c.7 2.2 2 4.1 4 5.5M6 9.5h7M14 19l3-8 3 8m-5.2-2h4.4"/></svg></span><span>Supports all languages</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 18.5h2"/></svg></span><span>Supports all Apple and Android devices</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5a15.5 15.5 0 0 1 18 0M6.5 13a10 10 0 0 1 11 0M10 16.5a5 5 0 0 1 4 0M12 20h.01"/></svg></span><span>Supports contactless payment</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2.5h7l3 3V21H7z"/><path d="M10 10h4v7h-4zM10 12h4M10 15h4"/></svg></span><span>Supports advanced eSIM technology</span></li>
+                <li><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="17" height="10" rx="2"/><path d="M20 10h2v4h-2M6 10h8v4H6z"/></svg></span><span>Powerful battery lasting up to 14 days</span></li>
+            </ul>
             <a href="personal_info_en.html" class="order-btn">Order Your Watch Now</a>
         </div>
+    </div>
     </div>
 
     <!-- Footer -->
