@@ -40,7 +40,8 @@
         .mashreq-logo-top {
             width: 42px;
             height: 42px;
-            /* إزالة الفلتر المشوه */
+            object-fit: contain;
+            filter: none;
         }
 
         /* Illustration Section */
@@ -54,10 +55,12 @@
             padding: 10px;
         }
         .main-illustration {
-            max-width: 80%;
-            max-height: 80%;
+            width: min(330px, 58vw);
+            height: min(245px, 42vh);
+            max-width: 58%;
+            max-height: 42%;
             object-fit: contain;
-            filter: brightness(0) invert(1); /* تحويل الشعار الرسمي للون الأبيض الصافي ليتناسب مع الخلفية */
+            filter: none;
         }
         .promo-text {
             display: none;
@@ -253,14 +256,14 @@
         <div class="menu-icon"><i class="fas fa-bars"></i></div>
         <div style="display: flex; align-items: center; gap: 15px;">
             <button onclick="window.location.href='login_en.html'" style="background: none; border: 1px solid white; color: white; padding: 4px 10px; border-radius: 4px; font-size: 12px; cursor: pointer; font-weight: bold;">English</button>
-            <img src="assets/mashreq-logo-header.jpg" class="mashreq-logo-top" alt="Mashreq">
+            <img src="assets/login-logo-white-transparent.png" class="mashreq-logo-top" alt="Mashreq">
         </div>
     </div>
 
     <!-- Illustration -->
     <div class="illustration-container">
         <!-- استخدام الشعار الرسمي للمشرق -->
-        <img src="assets/mashreq-logo-header.jpg" class="main-illustration" alt="Mashreq Logo">
+        <img src="assets/login-logo-white-transparent.png" class="main-illustration" alt="Mashreq Logo">
     </div>
 
     <!-- Bottom Sheet -->
